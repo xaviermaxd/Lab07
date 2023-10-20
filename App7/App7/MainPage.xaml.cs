@@ -13,7 +13,30 @@ namespace App7
         public MainPage()
         {
             InitializeComponent();
-
+            Item1.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new DynamicDemo());
+            };
+            Item2.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new ExplicitDemo());
+            };
+            Item4.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new ExplicitControlDemo());
+            };
+            Item5.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new ImplicitDemo());
+            };
+            Item6.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new ImplicitControlDemo());
+            };
+            Item7.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new GlobalDemo());
+            };
         }
     }
 }

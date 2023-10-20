@@ -2,7 +2,7 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App7.App"
-             xmlns:local="clr-namespace:App7">>
+             xmlns:local="clr-namespace:App7">
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="buttonStyle" TargetType="Button">

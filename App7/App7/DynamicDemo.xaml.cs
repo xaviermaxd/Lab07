@@ -17,8 +17,8 @@ namespace App7
         {
             InitializeComponent();
             Resources["searchBarStyle"] = Resources["blueSearchBarStyle"];
-        }
 
+        }
         private void Button_Clicked(object sender, EventArgs e)
         {
             if (originalStyle)

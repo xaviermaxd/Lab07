@@ -7,15 +7,24 @@ stacklayout {
 }
 
 .mainPageTitle {
-    font-style: bold;
+    font-style: oblique;
     font-size: medium;
 }
 
 
-.miBotonEstilo {
+.BotonNombre {
     background-color: lightblue;
     color: white;
     font-size: 20;
     border-color: green;
     border-width: 3;
+}
+
+
+.BotonApellido {
+    background-color: #3498db;
+    color: white;
+    border-radius: 10;
+    padding: 10;
+    text-align: center;
 }

@@ -18,12 +18,14 @@ namespace App7
         {
             InitializeComponent();
 
-            this.Resources = new ResourceDictionary();
+            //this.Resources = new ResourceDictionary();
+            //this.Resources.Add(StyleSheet.FromResource("App7.estilos.css", typeof(App).Assembly));
             this.Resources.Add(StyleSheet.FromAssemblyResource(
                 IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly,
                 "App7.estilos.css"));
 
-            
+
+
         }
     }
 }

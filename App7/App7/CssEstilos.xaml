@@ -4,13 +4,15 @@
              x:Class="App7.CssEstilos"
              StyleClass="contentpage">
     <StackLayout StyleClass="stacklayout">
-        <Label Text="Estilos" 
+        <Label Text="Estilos con Css" 
                    StyleClass="mainPageTitle" />
-        <Label Text="Con CSS" 
+        <Entry Placeholder="Escribir nombre" 
                    StyleClass="mainPageTitle" />
-        <Entry Placeholder="Escribe algo aquí..." 
-                   StyleClass="mainPageTitle" />
-        <Button x:Name="miBoton" Text="Css Button" 
-                StyleClass="miBotonEstilo" />
+        <Button x:Name="BotonNombre" Text="Css Button Nombre" 
+                StyleClass="BotonNombre" />
+        <Entry Placeholder="Escribir apellido" 
+           StyleClass="mainPageTitle" />
+        <Button x:Name="BotonApellido" Text="Css Button Apellido" 
+            StyleClass="BotonApellido" />
     </StackLayout>
 </ContentPage>

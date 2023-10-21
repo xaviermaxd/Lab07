@@ -1,0 +1,21 @@
+﻿contentpage {
+    background-color: lightgray;
+}
+
+stacklayout {
+    margin: 20;
+}
+
+.mainPageTitle {
+    font-style: bold;
+    font-size: medium;
+}
+
+
+.miBotonEstilo {
+    background-color: lightblue;
+    color: white;
+    font-size: 20;
+    border-color: green;
+    border-width: 3;
+}

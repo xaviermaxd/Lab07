@@ -21,21 +21,25 @@ namespace App7
             {
                 await Navigation.PushAsync(new ExplicitDemo());
             };
-            Item4.Clicked += async (sender, e) =>
+            Item3.Clicked += async (sender, e) =>
             {
                 await Navigation.PushAsync(new ExplicitControlDemo());
             };
-            Item5.Clicked += async (sender, e) =>
+            Item4.Clicked += async (sender, e) =>
             {
                 await Navigation.PushAsync(new ImplicitDemo());
             };
-            Item6.Clicked += async (sender, e) =>
+            Item5.Clicked += async (sender, e) =>
             {
                 await Navigation.PushAsync(new ImplicitControlDemo());
             };
-            Item7.Clicked += async (sender, e) =>
+            Item6.Clicked += async (sender, e) =>
             {
                 await Navigation.PushAsync(new GlobalDemo());
+            };
+            Item7.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new CssEstilos());
             };
         }
     }

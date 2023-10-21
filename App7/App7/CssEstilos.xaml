@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.CssEstilos"
+             StyleClass="contentpage">
+    <StackLayout StyleClass="stacklayout">
+        <Label Text="Estilos" 
+                   StyleClass="mainPageTitle" />
+        <Label Text="Con CSS" 
+                   StyleClass="mainPageTitle" />
+        <Entry Placeholder="Escribe algo aquí..." 
+                   StyleClass="mainPageTitle" />
+        <Button x:Name="miBoton" Text="Css Button" 
+                StyleClass="miBotonEstilo" />
+    </StackLayout>
+</ContentPage>

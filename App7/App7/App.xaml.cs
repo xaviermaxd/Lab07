@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Reflection;
 using Xamarin.Forms;
+using Xamarin.Forms.StyleSheets;
 using Xamarin.Forms.Xaml;
 
 namespace App7
@@ -10,8 +12,14 @@ namespace App7
         {
             InitializeComponent();
 
+            
+
             //MainPage = new MainPage();
             MainPage = new NavigationPage(new MainPage());
+
+            
+
+            
         }
 
         protected override void OnStart()

@@ -26,6 +26,8 @@ namespace lab07
         public VistaProductos()
         {
             InitializeComponent();
+
+
         }
 
         private void MostrarProductos(object sender, RoutedEventArgs e)
@@ -49,6 +51,41 @@ namespace lab07
             }
         }
 
+        private void RegistrarProducto(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                
+                Registrar ventanaRegistro = new Registrar();
+                ventanaRegistro.ShowDialog();  
 
+                MostrarProductos(sender, e);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al abrir la ventana de registro: " + ex.Message);
+            }
+        }
+
+        private void EliminarProducto(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                
+                var button = sender as Button;
+                if (button.DataContext is Producto producto)
+                {
+                    ProductBusiness business = new ProductBusiness();
+                    business.EliminarProducto(producto.product_id);
+
+                    
+                    MostrarProductos(sender, e);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -52,6 +52,48 @@ namespace CapaDatos
             return productos;
         }
 
-        
+        public void EliminarProducto(int product_id)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(BD.connectionString))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("USP_DeleteProductos", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@id", product_id);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
+
+        public void InsertarProducto(Producto producto)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(BD.connectionString))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("sp_InsertProduct", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@name", producto.name);
+                    command.Parameters.AddWithValue("@price", producto.price);
+                    command.Parameters.AddWithValue("@stock", producto.stock);
+                    
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
     }
 }

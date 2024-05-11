@@ -30,5 +30,17 @@ namespace BusinessLayer
 
             return result;
         }
+
+        public void EliminarProducto(int product_id)
+        {
+            EProducto eProducto = new EProducto();
+            eProducto.EliminarProducto(product_id);
+        }
+
+        public void InsertarProducto(Producto producto)
+        {
+            EProducto eProducto = new EProducto();
+            eProducto.InsertarProducto(producto);
+        }
     }
 }
